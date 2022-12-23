@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "trafficThief"
 version = "0.1.0"
-description = "A post-exploitation utility to stream TCP traffic and TLS keys to Wireshark from a remote host in real-time because fuck it"
-authors = ["bmshema <bmshemanski@gmail.com>"]
+description = "A post-exploitation utility to stream traffic and SSL/TLS keys to Wireshark from a remote host."
+authors = ["bmshema <bmshemanski@protonmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

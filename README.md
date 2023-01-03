@@ -40,3 +40,6 @@ sudo python3 trafficThief.py
 # Module Status:
 - Linux modules only at this time. Should work on any Debian-based linux target. Probably others.
 - Windows modules are in progress.
+
+# Disclaimer:
+You are fully responsibility for your actions related to trafficThief's use. This is proof of concept code and is still under development and may or may not be useful.

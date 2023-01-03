@@ -30,28 +30,28 @@ def global_help():
           '     use <module name>   Select a module to use\n'
           '     unuse               De-select the current module\n'
           '     networking          Display network interfaces\n'
-          '     http-on             Serves HTTP server for staging_area\n'
+          '     http-on             Serves HTTP server for payloads dir\n'
           '     http-off            Shuts down HTTP server\n'
           '\n'
           'Current Modules:\n'
           '\n'
           '     linux-ssh:           Exfil traffic and keys over ssh session\n'
-          '     linux-tcp:           Stages a payload locally to send to target to\n'
-          '                          exfil over reverse TCP connection\n'
+          '     linux-tcp:           Crafts a payload locally to transfer to the target\n'
+          '                          to execute and exfil over reverse TCP connection\n'
           '     windows-ssh:         Exfil traffic and keys over ssh session\n'
-          '     windows-tcp:         Stages a payload locally to send to target to\n'
-          '                          exfil over reverse TCP connection\n')
+          '     windows-tcp:         Crafts a payload locally to transfer to the target\n'
+          '                          to execute and exfil over reverse TCP connection\n')
 
 
 def show_modules():
     print('\nCurrent Modules:\n'
           '\n'
           '     linux-ssh:                  Exfil traffic and SSL/TLS keys over ssh session\n'
-          '     linux-tcp:                  Stages a payload locally to send to target to\n'
-          '                                 exfil over reverse TCP connection\n'
+          '     linux-tcp:                  Crafts a payload locally to transfer to the target\n'
+          '                                 to execute and exfil over reverse TCP connection\n'
           '     windows-ssh:                Exfil traffic and SSL/TLS keys over ssh session\n'
-          '     windows-tcp:                Stages a payload locally to send to target to\n'
-          '                                 exfil over reverse TCP connection\n'
+          '     windows-tcp:                Crafts a payload locally to transfer to the target\n'
+          '                                 to execute and exfil over reverse TCP connection\n'
           '\n')
 
 

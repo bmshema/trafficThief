@@ -13,7 +13,7 @@ banner = """
                            ██║   ██║  ██║██║███████╗██║                     
                            ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚═╝                                   
             A post-exploitation utility to stream traffic and SSL/TLS 
-               keys to Wireshark from a remote host because fuck it
+               keys to Wireshark from a remote host because why not
 
 Global Commands:   help   |   show modules   |   use <module name>   |  unuse  |
 """

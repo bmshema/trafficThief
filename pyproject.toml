@@ -2,7 +2,7 @@
 name = "trafficThief"
 version = "0.1.0"
 description = "A post-exploitation utility to stream traffic and SSL/TLS keys to Wireshark from a remote host."
-authors = ["bmshema <bmshemanski@protonmail.com>"]
+authors = ["bmshema <bmshema@protonmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

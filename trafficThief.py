@@ -121,8 +121,10 @@ def exit_cli():
 def http_on():
     port = int(thief.http_server)
     with socketserver.TCPServer(('', port), Handler) as httpd:
-        httpd.serve_forever()
         repl.success(f'HTTP server on {thief.http_server}')
+        repl.success('ctrl+c to stop HTTP server')
+        httpd.serve_forever()
+
 
 
 @repl.command('set')

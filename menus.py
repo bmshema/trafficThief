@@ -46,12 +46,14 @@ def global_help():
 def show_modules():
     print('\nCurrent Modules:\n'
           '\n'
-          '     linux-ssh:                  Exfil traffic and SSL/TLS keys over ssh session\n'
-          '     linux-tcp:                  Crafts a payload locally to transfer to the target\n'
-          '                                 to execute and exfil over reverse TCP connection\n'
-          '     windows-ssh:                Exfil traffic and SSL/TLS keys over ssh session\n'
-          '     windows-tcp:                Crafts a payload locally to transfer to the target\n'
-          '                                 to execute and exfil over reverse TCP connection\n'
+          '     linux-ssh:               Exfil traffic and SSL/TLS keys over ssh session\n'
+          '     linux-tcp:               Crafts a payload locally to transfer to the target\n'
+          '                              to execute and exfil over reverse TCP connection\n'
+          '\n'
+          '\nIn Progress Modules:\n'
+          '     windows-ssh:             Exfil traffic and SSL/TLS keys over ssh session\n'
+          '     windows-tcp:             Crafts a payload locally to transfer to the target\n'
+          '                              to execute and exfil over reverse TCP connection\n'
           '\n')
 
 
@@ -64,10 +66,12 @@ def tcp_help():
           '     payload                     Crafts payload with all current options\n'
           '     http-on                     Serves HTTP server (ctrl+c to stop)\n'
           '\n'
-          'Notes: \n'
-          '- The payload will be crafted in the trafficThief/staging_area directory\n'
-          '- The HTTP server will be served in the staging_area directory\n'
-          '- Any other fun payloads can be put in the staging_area also\n'
+          'Usage: \n'
+          '- The payload will be crafted in the trafficThief/payloads directory\n'
+          '- The HTTP server will be served in the payloads directory\n'
+          '- Any other fun payloads can be put in payloads too\n'
+          '- Execute run to start the module locally before executing the payload\n'
+          '  on the target machine\n'
           '- Add keyloot.log to Wireshark:\n'
           '  Edit > Preferences > Protocols > TLS > Pre-Master Secret log filename\n')
 

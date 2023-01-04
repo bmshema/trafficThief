@@ -11,7 +11,7 @@
                                          ██║   ██╔══██║██║██╔══╝  ██╔══╝                  
                                          ██║   ██║  ██║██║███████╗██║                     
                                          ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚═╝                                   
-
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/bmshema/trafficThief)
 # trafficThief
 A post-exploitation utility to stream traffic and SSL/TLS keys to Wireshark from a remote host.
 

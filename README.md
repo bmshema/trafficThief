@@ -21,6 +21,7 @@ trafficThief enables SSL/TLS keylogging on a remote host and feeds the keylog al
 Depending on your access to the target machine, trafficThief can interact with the target machine over ssh and feed the data back to you or craft a payload to transfer to the target machine to execute. trafficThief will set up a HTTP server in a payloads directory for payload transfer.
 
 # Dependencies:
+- python 3.6+
 - sshpass
 - Wireshark
 ```
@@ -38,7 +39,7 @@ sudo python3 trafficThief.py
 ```
 
 # Module Status:
-- Linux modules only at this time. Should work on any Debian-based linux target. Probably others.
+- Only the two linux modules are finished at this time. They should work on any Debian-based linux target. Probably others.
 - Windows modules are in progress.
 
 # Disclaimer:

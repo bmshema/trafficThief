@@ -34,7 +34,7 @@ def check_port(port):
     if re.search(port_regex, port):
         return port
     else:
-        print("Invalid port number...")
+        print(Palette.YELLOW.format("Invalid port number..."))
 
 
 def start_banner():
@@ -51,8 +51,8 @@ def start_wireshark():
 def dump_prep():
     """
     - Creates a named pipe locally at /tmp/loot for Wireshark to listen to.
-    - Creates a TLS keylog file at /tmp/trafficloot/keyloot.log to load into Wireshark.
-    - Creates a "staging_area" directory in $HOME/staging_area to pre-stage payloads\
+    - Creates a TLS keylog file at /trafficThief/keyloot.log to load into Wireshark.
+    - Creates a payloads directory in trafficThief/ to pre-stage payloads\
       for transfer to the target machine.
     """
     make_pipe = os.system('mkfifo /tmp/loot 2>/dev/null')
@@ -70,7 +70,7 @@ def dump_prep():
 
     make_staging = os.system('mkdir -p $PWD/payloads 2>/dev/null ')
     if make_staging == 0:
-        print(Palette.GREEN.format(f'[+] staging_area directory located at trafficThief/payloads\n'))
+        print(Palette.GREEN.format(f'[+] payloads directory located at trafficThief/payloads\n'))
     else:
         print(Palette.YELLOW.format("[W] Not sure whats happening...."))
 

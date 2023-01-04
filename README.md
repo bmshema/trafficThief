@@ -39,7 +39,7 @@ sudo python3 trafficThief.py
 ```
 
 # Module Status:
-- Linux modules only at this time. Should work on any Debian-based linux target. Probably others.
+- Only the two linux modules are finished at this time. They should work on any Debian-based linux target. Probably others.
 - Windows modules are in progress.
 
 # Disclaimer:

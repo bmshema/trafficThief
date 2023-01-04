@@ -8,10 +8,6 @@ from riposte.printer import Palette
 from utils import *
 
 
-# DO A DEPENDENCY CHECK AT SOME POINT FOR dbus-x11
-# Without it, the gnome-terminals will not automatically open on 22.04 ubuntu
-
-
 class TrafficThief(Riposte):
     @property
     def prompt(self):
